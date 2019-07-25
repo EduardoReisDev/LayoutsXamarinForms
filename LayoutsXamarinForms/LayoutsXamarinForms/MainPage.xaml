@@ -7,10 +7,11 @@
              x:Class="LayoutsXamarinForms.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Button Text="Stack" Clicked="GoPaginaStack"/>
+        <Button Text="Grid" Clicked="GoPaginaGrid"/>
+        <Button Text="Absolute" Clicked="GoPaginaAbsolute"/>
+        <Button Text="Relative" Clicked="GoPaginaRelative"/>
+        <Button Text="Scroll" Clicked="GoPaginaScroll"/>
     </StackLayout>
 
 </ContentPage>
