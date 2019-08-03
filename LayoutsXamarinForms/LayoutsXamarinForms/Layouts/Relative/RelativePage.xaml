@@ -7,10 +7,12 @@
              x:Class="LayoutsXamarinForms.Layouts.Relative.RelativePage">
     <ContentPage.Content>
         <RelativeLayout>
-            <BoxView RelativeLayout.WidthConstraint="{ConstraintExpression Type=, ElementName=, Property=, Factor=, Constant=}" BackgroundColor="Blue"/>
-            <BoxView BackgroundColor="Green"/>
-            <BoxView BackgroundColor="Red"/>
-            
+            <BoxView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-50}" BackgroundColor="Blue"/>
+            <BoxView BackgroundColor="Red" Margin="200" WidthRequest="100" HeightRequest="100" x:Name="Vermelho"/>
+            <BoxView BackgroundColor="Green"
+                     WidthRequest="100" HeightRequest="100"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Vermelho, Property=x, Factor=1, Constant=20}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Vermelho, Property=y, Factor=1, Constant=20}"/>
         </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>
