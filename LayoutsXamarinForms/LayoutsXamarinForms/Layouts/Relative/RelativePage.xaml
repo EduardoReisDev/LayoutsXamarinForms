@@ -6,10 +6,11 @@
              mc:Ignorable="d"
              x:Class="LayoutsXamarinForms.Layouts.Relative.RelativePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Relative"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <RelativeLayout>
+            <BoxView RelativeLayout.WidthConstraint="{ConstraintExpression Type=, ElementName=, Property=, Factor=, Constant=}" BackgroundColor="Blue"/>
+            <BoxView BackgroundColor="Green"/>
+            <BoxView BackgroundColor="Red"/>
+            
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>
