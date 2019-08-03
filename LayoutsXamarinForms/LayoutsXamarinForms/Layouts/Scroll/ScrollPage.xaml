@@ -6,6 +6,12 @@
              mc:Ignorable="d"
              x:Class="LayoutsXamarinForms.Layouts.Scroll.ScrollPage">
     <ContentPage.Content>
-        
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Scroll"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
