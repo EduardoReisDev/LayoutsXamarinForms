@@ -6,10 +6,10 @@
              mc:Ignorable="d"
              x:Class="LayoutsXamarinForms.Layouts.Absolute.AbsolutePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Absulute"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <AbsoluteLayout>
+            <BoxView AbsoluteLayout.LayoutBounds="0,0,200,100" BackgroundColor="Blue"/>
+            <BoxView AbsoluteLayout.LayoutBounds="50,100,200,100" BackgroundColor="Green"/>
+            <BoxView AbsoluteLayout.LayoutBounds="100,50,200,100" BackgroundColor="Red"/>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
